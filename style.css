@@ -1,7 +1,9 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
-body{
-    font: 18px "Nunito" , sans-serif;
+
+
+  body{
+    font: 16px "Nunito" , sans-serif;
     color: black;
     min-height: 100vh;
     padding: 2rem;
@@ -9,6 +11,8 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+
 
 body::before{
     content: ' ';
@@ -22,6 +26,8 @@ body::before{
 }
 
 
+
+
 @keyframes backgroundZoomAnimate {
     from{
         transform: scale(1);
@@ -30,6 +36,8 @@ body::before{
         transform: scale(1.3);
     }
 }
+
+
 
 
 .profile-card{
@@ -64,4 +72,65 @@ body::before{
 
 .profile-card_desc{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+
+
+.profile-card_desc h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+.profile-card_desc div{
+    font-size: 20px;
+}
+
+.profile-card_info{
+    display: flex;
+    justify-content: center;
+    gap:25px;
+  
+}
+@media screen and (max-width:576px) {
+    .profile-card_info{
+        gap: 30px;
+    }
+ }
+
+.profile-card_info div{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.profile-card_info div:first-child{
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.profile-card_info div:last-child{
+  font-size: 16px;
+  opacity: .7;
+}
+
+
+.profile-card_socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 15px; */
+    flex-wrap: wrap;
+}
+
+
+.profile-card_socials a{
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
 }
