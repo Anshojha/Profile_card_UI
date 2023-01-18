@@ -8,8 +8,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
 
 body::before{
@@ -42,4 +40,28 @@ body::before{
     backdrop-filter: blur(15px);
     border: 2px solid #ffffff40;
     padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media screen and (max-width:768px) {
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .profile-card img{
+        margin: auto;
+        width: 200px;
+        height: 200x;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 10px 60px -10px rgba(13, 28, 39,.5);
+    }
+}
+
+
+.profile-card_desc{
+    text-align: center;
 }
